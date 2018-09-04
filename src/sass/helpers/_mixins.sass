@@ -1,0 +1,95 @@
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+=h
+  &:hover
+    @content
+
+=vcenter
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+=placeholder-color($color)
+  &::placeholder
+    color: $color
+
+=placeholder
+  &::placeholder
+    @content
+
+=coverdiv
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+=cover
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50%
+
+=hover
+  .no-touch &:hover
+    @content
+
+=z
+  &:__
+    @content
+
+=tr
+  transition: all 300ms
+
+=trs($ms)
+  transition: all $ms+ms
+
+=trc
+  transition: color 300ms
+
+=trcs($ms)
+  transition: color $ms+ms
+
+=trbgc
+  transition: backround-color 300ms
+
+=trbgcs($ms)
+  transition: backround-color $ms+ms
+
+=placeholder-color($color)
+  &::placeholder
+    color: $color
+
+=coverdiv
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+=cover
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50%
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=box
+  +box-sizing(border-box)
+
+=scale($var)
+  transform: scale($var)
+
+=rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0)
+  transform: rotate($deg + deg)
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand')

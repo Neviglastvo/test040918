@@ -1,0 +1,42 @@
+.slider-controls
+	display: flex
+	z-index: 10
+
+.slider-arrow
+	width: 45px
+	height: 45px
+	background-color: #fff
+	padding: 10px
+	+tr
+	+h
+		cursor: pointer
+		background-color: #eee
+	svg
+		width: 100%
+		height: 100%
+		fill: $main
+	&:last-child
+		margin-right: 0
+	&__prev
+		margin-right: 5px
+		+rotate(180)
+	&__next
+
+.slider-counter
+	display: flex
+	align-items: flex-end
+	margin-bottom: 26px
+	&__item
+		color: #fff
+		font-family: EBGaramond
+		font-weight: 700
+		line-height: 14px
+	&__current
+		font-size: 24px
+		line-height: 14px
+		margin-right: 3px
+	&__total
+		font-size: 14px
+		line-height: 6px
+		&:before
+			content: "/"

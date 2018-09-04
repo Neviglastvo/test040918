@@ -1,0 +1,58 @@
+.navigation-mobile
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	justify-content: space-between
+	flex-direction: column
+	align-items: center
+	padding: 35px 30px
+	background-color: $main
+	z-index: -10
+	transform: translateY(-100%)
+	overflow: hidden
+	+tr
+	+r(1024)
+		display: flex
+	&__is-open
+		transform: translateY(0)
+		z-index: 999
+	&__container
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 270px
+	&__block
+		display: flex
+
+	&__item
+		display: flex
+		flex-wrap: wrap
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 500
+		text-transform: uppercase
+		margin-bottom: 32px
+		+tr
+		&:last-child
+			margin-bottom: 0
+	&__link
+		color: #fff
+		background-color: transparent
+	.hamburger
+		position: absolute
+		right: 30px
+		top: 20px
+	.contacts
+		flex-wrap: wrap
+		justify-content: space-between
+		&__item
+			text-align: center
+			line-height: 14px
+			margin-right: 0
+			min-width: 120px
+			&:last-child
+				margin: 0 auto
+				margin-top: 12px

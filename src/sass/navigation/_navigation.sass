@@ -1,0 +1,19 @@
+.navigation
+	display: flex
+	align-items: center
+	+r(1024)
+		display: none
+	&__link
+		align-content: stretch
+		line-height: 73px
+		color: $main
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 500
+		text-transform: uppercase
+		margin-right: 50px
+		+tr
+		&:last-child
+			margin-right: 0
+		+h
+			text-shadow: 0 0 0.5px $main

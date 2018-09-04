@@ -1,0 +1,43 @@
+.hamburger
+	width: 38px
+	min-width: 38px
+	max-width: 38px
+	height: 28px
+	min-height: 28px
+	max-height: 28px
+	cursor: pointer
+	position: relative
+	display: none
+	+tr
+	+r(1024)
+		display: block
+	span
+		display: block
+		width: 100%
+		height: 4px
+		background-color: $main
+		border-radius: 3px
+		position: absolute
+		transform: rotate(0deg)
+		+tr
+		&:nth-child(1)
+			top: 0
+		&:nth-child(2)
+			top: 12px
+			opacity: 1
+			right: 0
+		&:nth-child(3)
+			top: 24px
+	&__is-open
+		span
+			background-color: #fff
+			+tr
+			&:nth-child(1)
+				top: 12px
+				transform: rotate(135deg)
+			&:nth-child(2)
+				opacity: 0
+				right: -38px
+			&:nth-child(3)
+				top: 12px
+				transform: rotate(-135deg)

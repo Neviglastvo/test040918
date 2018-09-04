@@ -1,0 +1,61 @@
+.hero
+	width: 100%
+	background: linear-gradient(rgba(0,64,128,0.6), rgba(0,64,128,0.6)), url("../img/hero/bg.jpg") no-repeat center center
+	background-size: cover
+	position: relative
+	&__container
+		min-height: 600px
+		max-width: 1180px
+		padding: 0 15px
+		margin: 0 auto
+		position: relative
+		+r(1024)
+			padding: 0 30px
+	&__slider
+		width: 100%
+		margin: 0 auto
+		position: relative
+		z-index: 2
+	&__box
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		position: absolute
+		right: 15px
+		bottom: 0
+		z-index: 10
+		+r(1024)
+			right: 30px
+	&__item
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		padding: 70px
+		min-height: 600px
+		+r(1024)
+			padding: 48px 0
+		+r(768)
+			justify-content: center
+	&__subtitle
+		color: #FFF
+		font-family: $f
+		font-size: 12px
+		font-weight: 300
+		line-height: 14px
+		margin-bottom: 25px
+	&__title
+		color: #fff
+		font-family: Roboto
+		font-size: 40px
+		font-weight: 700
+		line-height: 45px
+		margin-bottom: 31px
+		max-width: 524px
+		+r(768)
+			font-size: 24px
+	&__counter
+		color: #fff
+		font-weight: 700
+		line-height: 14px
+		font-size: 24px
+

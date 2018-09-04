@@ -1,0 +1,16 @@
+.lang-switcher
+	display: flex
+	&__item
+		opacity: 0.5
+		text-transform: uppercase
+		margin-right: 13px
+		color: #fff
+		font-family: Roboto
+		font-size: 13px
+		font-weight: 400
+		+h
+			cursor: pointer
+		&:last-child
+			margin-right: 0
+	&__item-active
+		opacity: 1

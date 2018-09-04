@@ -1,0 +1,36 @@
+.header
+	display: flex
+	flex-direction: column
+	overflow: hidden
+	&__container
+		width: 100%
+		padding: 0 15px
+		max-width: 1150px
+		margin: 0 auto
+		+r(1024)
+			padding: 0 30px
+
+.top-header-menu
+	background-color: $main
+	+r(1024)
+		display: none
+	&__container
+		display: flex
+		justify-content: flex-end
+		width: 100%
+		padding: 0 15px
+		max-width: 1150px
+		margin: 0 auto
+	&__item
+		display: flex
+		align-items: center
+	.lang-switcher
+		margin-left: 70px
+
+
+.bottom-header-menu
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: #FFF
+	&__container
